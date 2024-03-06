@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+}
+
+/* fonts */
+#hero {
+  font-family: 'Voga', sans-serif;
+  /* background-image: url("./images/Cat\ 1920_1080.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  height: 100svh;
+  /* margin: 0; */
+  /* padding: 10px; */
+}
+
+/* slider  */
+.slider {
+ overflow: hidden;
+ width: 100vw;
+ height: 100vh;
+ position: relative;
+}
+ 
+.slider .slide {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-size: cover;
+ background-position: center;
+ animation: slider 32.5s infinite;
+}
+ 
+.slider .slide:nth-child(1) {
+   background-image: url('./images/Cat\ 1920_1080.jpg');
+   animation-delay: 0s;
+}
+
+.slider .slide:nth-child(2) {
+   background-image: url('./images/Cats\ amy-baugess-unsplash.jpg');
+   animation-delay: -6.5s;
+}
+
+.slider .slide:nth-child(3) {
+   background-image: url('./images/Cat\ tran-mau-tri-tam-unsplash.jpg');
+   animation-delay: -13s;
+}
+.slider .slide:nth-child(4) {
+  background-image: url("./images/bogdan-farca-CEx86maLUSc-unsplash.jpg");
+  animation-delay: -19.5s;
+}
+
+.slider .slide:nth-child(5) {
+  background-image: url("./images/raoul-droog-yMSecCHsIBc-unsplash.jpg");
+  animation-delay: -26s;
+}
+
+@keyframes slider {
+ 0%, 16%, 100% {
+   transform: translateX(0);
+   animation-timing-function: ease;
+ }
+ 20% {
+   transform: translateX(-100%);
+   animation-timing-function: step-end;
+ }
+ 96% {
+   transform: translateX(100%);
+   animation-timing-function: ease;
+ }
+}
+/* Heart */
+.heart-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+/* Left */
+
+.heart-left,
+.heart-right {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(80, 0, 108, 1);
+  /* background-color: rgba(80, 0, 108, 0.8); */
+}
+
+.heart-left:before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(80, 0, 108, 1);
+  /* background-color: rgba(80, 0, 108, 0.8); */
+  /* background-color: blue; */
+  content: "";
+  border-radius: 50px;
+  left: -50px;
+}
+
+.heart-left:after,
+.heart-right:after {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(80, 0, 108, 1);
+  /* background-color: rgba(80, 0, 108, 0.8); */
+  /* background-color: yellow; */
+  content: "";
+  border-radius: 50px;
+  top: -50px;
+}
+
+.heart-right:before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(80, 0, 108, 1);
+  /* background-color: rgba(80, 0, 108, 0.8); */
+  /* background-color: blue; */
+  content: "";
+  border-radius: 50px;
+  left: 50px;
+}
+
+/* Heading */
+.parallax-heading {
+  /* position: relative; */
+  /* width: 30%; */
+  /* left: 250px; */
+  display: grid;
+  /* height: 100%; */
+  grid-template-columns:  10% 30% 50% 10%;
+  grid-template-rows:  300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-heading h1 {
+  font-size: 4rem;
+  color: #2B192E;
+  z-index: 1;
+  grid-column-start: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .parallax-heading {
+  grid-template-columns:  10% 30% 10%;
+  }
+  .parallax-heading h1 {
+    font-size: 3rem;
+  }
+}
