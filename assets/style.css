@@ -186,6 +186,68 @@ body {
   /* gap: 1.5rem; */
 }
 
+/* Pricing Section */
+#pricing {
+  background-color: #CE8CA5;
+}
+.pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2B192E;
+}
+.pricing-header h2 {
+  font-size: 3rem;
+}
+.pricing-container {
+  display: flex;
+  height: 100svh;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-items: center;
+  width: 200px;
+}
+.card-header {
+  background-color: rgba(80, 0, 108, 0.7);
+  color: #F5E8DA;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.card-body {
+  background-color: rgba(80, 0, 108, 0.22);
+  /* color: #50006C; */
+  color: #2B192E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-body ul {
+  list-style: none;
+}
+
+.btn {
+  background-color: #CE8CA5;
+  border: none;
+  color: #F5E8DA;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.btn:hover {
+  background-color: rgba(80, 0, 108, 0.7);
+}
 /* Meda Queries */
 @media only screen and (max-width: 768px) {
   .parallax-heading {
@@ -210,5 +272,9 @@ body {
 
   .feature-content {
     align-items: center;
+  }
+  .pricing-container {
+    flex-direction: column;
+    height: 130svh;
   }
 }
