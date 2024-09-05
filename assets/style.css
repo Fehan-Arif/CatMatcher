@@ -190,6 +190,9 @@ body {
 #pricing {
   background-color: #CE8CA5;
 }
+.mt-120 {
+  margin-top: 120px;
+}
 
 .pricing-header {
   display: flex;
@@ -204,7 +207,7 @@ body {
 
 .pricing-container {
   display: flex;
-  height: 100svh;
+  height: 80svh;
   justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
