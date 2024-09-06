@@ -285,24 +285,39 @@ body {
   margin-bottom: 10px;
 }
 
+.btn-download:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px 0px rgba(43, 25, 43, 0.5);
+}
+
 /* Footer Section  */
 #footer {
   background-color: #303030;
 }
+
 .footer-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
   flex-direction: column;
-  color: #F5E8DA;
+  color: #f5e8da;
 }
+
 .footer-flex ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
+
+.fa-6x{
+  color: #FFB1A5;
+}
+.fa-6x:hover {
+  color: #CE8CA5;
+}
+
 /* Meda Queries */
 @media only screen and (max-width: 768px) {
   .parallax-heading {
