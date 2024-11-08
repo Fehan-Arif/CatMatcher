@@ -339,7 +339,7 @@ body {
     height: 130svh;
     flex-direction: column;
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 30%;
   }
 
   .feature {
@@ -380,6 +380,9 @@ body {
     font-size: 4em;
   }
 
+  .footer-flex {
+    height: 60vh;
+  }
   .footer-flex ul {
     flex-direction: column;
   }
