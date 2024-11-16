@@ -1,159 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cat Matcher</title>
+    <link rel="icon" href="./assets/images/favicon.ico" />
+    <link href="https://fonts.cdnfonts.com/css/voga" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/02e9c814b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cat Matcher</title>
-  <link href="https://fonts.cdnfonts.com/css/voga" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/02e9c814b9.js" crossorigin="anonymous"></script>
-  <link href="assets/style.css" rel="stylesheet">
-</head>
-
-<body>
-  <div class="wrapper">
-    <section id="hero">
-      <div class="slider">
+  <body>
+    <header id="hero-section">
+      <div class="image-slider">
         <div class="slide"></div>
         <div class="slide"></div>
         <div class="slide"></div>
         <div class="slide"></div>
         <div class="slide"></div>
-        <div class="heart-flex">
-          <div class="heart-left"> </div>
-          <div class="heart-right"></div>
-        </div>
-        <div class="parallax-heading">
-          <h1>Taking The Cat Ditribution System to the Next Level</h1>
-        </div>
-      </div>
-    </section>
-
-    <section id="features">
-      <div class="features-container">
-        <div class="feature">
-          <i class="fa-solid fa-shield-cat fa-9x" style="color: #50006C;"></i>
-          <div class="feature-content">
-            <h2>Security</h2>
-            <p>Secure and Safe to use</p>
-          </div>
-        </div>
-        <div class="feature">
-          <i class="fa-solid fa-heart-pulse fa-9x" style="color: #50006C;"></i>
-          <div class="feature-content">
-            <h2>Love Guaranteed</h2>
-            <p>Find true love</p>
-          </div>
-        </div>
-        <div class="feature">
-          <i class="fa-solid fa-crown fa-9x" style="color: #50006C;"></i>
-          <div class="feature-content">
-            <h2>Exclusive</h2>
-            <p>Find the most elite breeds</p>
-          </div>
-        </div>
-    </section>
-    <section id="testimonials">
-      <!-- SVG for testimonials -->
-      <svg width="0" height="0">
-        <defs>
-          <clipPath id="heartClipPath" clipPathUnits="objectBoundingBox">
-            <path d="M0.5,0.2 C0.15,-0.1 -0.2,0.35 0.5,0.9 C1.2,0.35 0.85,-0.1 0.5,0.2 Z" />
-          </clipPath>
-        </defs>
-      </svg>
-      <div class="testimonials-container">
-        <div class="testimonial">
-          <img src="assets/images/cat-testimonial-1.jpg" alt="Cat testimonial picture">
-          <h2>Wonderful Service</h2>
-          <p>I have found true happiness</p>
-        </div>
-        <div class="testimonial">
-          <img src="assets/images/cat-testimonial-2.jpg" alt="Cat testimonial picture">
-          <h2>Swaggalicious</h2>
-          <p>I have the pick of the litter</p>
-        </div>
-        <div class="testimonial">
-          <img src="assets/images/cat-testimonial-3.jpg" alt="Cat testimonial picture">
-          <h2>Exciting</h2>
-          <p>I have overcome my fears!</p>
+        <div class="heading-container">
+          <h1>Swipe Right for <i class="fa-solid fa-paw"></i> Purrfection</h1>
+          <h2>
+            Connecting Cats with Their <i class="fa-solid fa-paw"></i> Purrfect
+            Match
+          </h2>
         </div>
       </div>
-    </section>
-    <section id="pricing">
-      <div class="pricing-header">
-        <h2 class="mt-120">A Plan For All Your Needs</h2>
-        <p>Simple and Affordable</p>
-      </div>
-      <div class="pricing-container">
-        <div class="pricing-card">
-          <div class="card-header">
-            <h3>Free</h3>
+    </header>
+    <main>
+      <section id="features">
+        <div class="features-container">
+          <div class="feature">
+            <i class="fa-solid fa-shield-cat"></i>
+            <div class="feature-content">
+              <h2>Security</h2>
+              <p>
+                Your safety is our priority. Enjoy peace of mind knowing your
+                data is secure and protected.
+              </p>
+            </div>
           </div>
-          <div class="card-body">
-            <h2>0$/mo</h2>
-            <ul>
-              <li>5 Matches per day</li>
-              <li>10 Messages per day</li>
-              <li>Unlimited app usage</li>
-            </ul>
-            <button type="button" class="btn">Sign Up</button>
+          <div class="feature">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <div class="feature-content">
+              <h2>Love Guaranteed</h2>
+              <p>
+                Experience the joy of finding a true connection. We promise a
+                heartwarming journey to companionship.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="pricing-card">
-          <div class="card-header">
-            <h3>Premium</h3>
-          </div>
-          <div class="card-body">
-            <h2>5$/mo</h2>
-            <ul>
-              <li>Unlimited Matches</li>
-              <li>Unlimited Messages</li>
-              <li>Unlimited app usage</li>
-            </ul>
-            <button type="button" class="btn">Sign Up</button>
-          </div>
-        </div>
-        <div class="pricing-card">
-          <div class="card-header">
-            <h3>Business</h3>
-          </div>
-          <div class="card-body">
-            <h2>10$/mo</h2>
-            <ul>
-              <li>Priority Listing</li>
-              <li>Unlimited Matches</li>
-              <li>Unlimited Messages</li>
-              <li>Unlimited app usage</li>
-            </ul>
-            <button type="button" class="btn">Sign Up</button>
+          <div class="feature">
+            <i class="fa-solid fa-crown"></i>
+            <div class="feature-content">
+              <h2>Exclusive</h2>
+              <p>
+                Discover the crème de la crème of cat breeds. Your perfect match
+                is waiting among our elite selections.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="download">
-      <div class="download-container">
-        <h2>Find True Love Today</h2>
-        <div class="download-btn">
-          <button type="button" class="btn-download"><i class="fa-brands fa-google-play fa-2xl"
-              style="color:#CE8CA5"></i> Download</button>
-          <button type="button" class="btn-download"><i class="fa-brands fa-apple fa-2xl" style="color:#CE8CA5"></i>
-            Download</button>
+      </section>
+      <section id="testimonials">
+        <!-- SVG for testimonials -->
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="heartClipPath" clipPathUnits="objectBoundingBox">
+              <path
+                d="M0.5,0.2 C0.15,-0.1 -0.2,0.35 0.5,0.9 C1.2,0.35 0.85,-0.1 0.5,0.2 Z"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="testimonials-container">
+          <div class="testimonial">
+            <img
+              src="assets/images/cat-testimonial-1.jpg"
+              alt="Cat testimonial picture"
+            />
+            <h2>Life-Changing Experience</h2>
+            <p>
+              This service has brought so much joy and companionship into my
+              life. Truly a blessing!
+            </p>
+          </div>
+          <div class="testimonial">
+            <img
+              src="assets/images/cat-testimonial-2.jpg"
+              alt="Cat testimonial picture"
+            />
+            <h2>Top Notch Quality</h2>
+            <p>
+              I never imagined I could find such an amazing feline friend.
+              Life-changing experience!
+            </p>
+          </div>
+          <div class="testimonial">
+            <img
+              src="assets/images/cat-testimonial-3.jpg"
+              alt="Cat testimonial picture"
+            />
+            <h2>Unforgettable Journey</h2>
+            <p>
+              From nervous to exhilarated, this journey has been nothing short
+              of amazing. Thank you!
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id="pricing">
+        <div class="pricing-header">
+          <h2>A Plan For All Your Needs</h2>
+          <p>Simple and Affordable</p>
+        </div>
+        <div class="pricing-container">
+          <div class="pricing-card">
+            <div class="card-header">
+              <h3>Free</h3>
+            </div>
+            <div class="card-body">
+              <h2>$0/mo</h2>
+              <ul>
+                <li>5 Matches per day</li>
+                <li>10 Messages per day</li>
+                <li>Unlimited app usage</li>
+              </ul>
+              <button type="button" class="btn">Sign Up</button>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <div class="card-header">
+              <h3>Premium</h3>
+            </div>
+            <div class="card-body">
+              <h2>$9.99/mo</h2>
+              <ul>
+                <li>Unlimited Matches</li>
+                <li>Unlimited Messages</li>
+                <li>Unlimited app usage</li>
+              </ul>
+              <button type="button" class="btn">Sign Up</button>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <div class="card-header">
+              <h3>Business</h3>
+            </div>
+            <div class="card-body">
+              <h2>$19.99/mo</h2>
+              <ul>
+                <li>Priority Listing</li>
+                <li>Unlimited Matches</li>
+                <li>Unlimited Messages</li>
+                <li>Unlimited app usage</li>
+              </ul>
+              <button type="button" class="btn">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="download">
+        <div class="download-container">
+          <h2>Discover Your Purrfect Match</h2>
+          <div class="download-buttons">
+            <button type="button" class="btn-download">
+              <i class="fa-brands fa-google-play" aria-hidden="true"></i>
+              Download on Google Play Store
+            </button>
+            <button type="button" class="btn-download">
+              <i class="fa-brands fa-apple" aria-hidden="true"></i>
+              Download on the Apple Store
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer id="footer">
-      <div class="footer-flex">
+      <div class="footer-container">
         <ul>
-          <li><a href=""><i class="fa-brands fa-x-twitter fa-6x"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-instagram fa-6x"></i></a></li>
-          <li><a href=""><i class="fa-solid fa-envelope fa-6x"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-square-facebook fa-6x"></i></a></li>
+          <li>
+            <a href="https://fehan.com.au"
+              ><i class="fa-regular fa-address-card"></i> Websites</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Fehan-Arif"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+          </li>
         </ul>
         <p>©️ 2024 Fehan Arif</p>
       </div>
     </footer>
-  </div>
-</body>
-
+  </body>
 </html>
