@@ -22,6 +22,7 @@
   /* Purplish color */
   --paw-color: #ff85a2;
   /* Cat paw pink color */
+  --btn-font-size: 1rem;
 }
 
 /* Base styles for mobile-first */
@@ -216,7 +217,7 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: var(--btn-font-size);
   border-radius: 5px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -235,10 +236,19 @@ p {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: var(--btn-font-size);
   border-radius: 12px;
   margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-download i {
+  margin-right: 10px;
+  /* Space between icon and text */
 }
 
 .btn-download:hover {
@@ -320,6 +330,8 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-around;
+    align-items: center;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 50px;
@@ -331,6 +343,15 @@ p {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: rgba(80, 0, 108, 0.22);
+    width: 100%;
+    max-width: 300px;
+    /* Consistent max width */
+    height: auto;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    /* Include padding and border in width */
+    margin-bottom: 20px;
+    /* Add margin to space out cards */
   }
 
   .pricing-card h3 {
@@ -358,16 +379,17 @@ p {
     min-height: 50vh;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .download-container {
     gap: 20px;
+    align-items: center;
   }
 
   .fa-google-play,
   .fa-apple {
     font-size: 2rem;
-    float: left;
   }
 
   /* Footer Section  */
@@ -397,9 +419,6 @@ p {
     color: #ce8ca5;
   }
 
-  /* .fa-github, .fa-address-card { */
-  /*   font-size: 1.5rem; */
-  /* } */
   .footer-container {
     font-size: 1.5rem;
   }
@@ -435,6 +454,7 @@ p {
     /* 20px */
     --p-size: 1.125rem;
     /* 18px */
+    --btn-font-size: 1.125rem;
   }
 }
 
@@ -457,6 +477,102 @@ p {
     /* 24px */
     --p-size: 1.25rem;
     /* 20px */
+    --btn-font-size: 1.125rem;
+  }
+
+  /* Features Section */
+  #features,
+  #testimonials {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .features-container,
+  .testimonials-container {
+    flex-direction: row;
+    column-gap: 60px;
+    margin: auto 60px;
+  }
+
+  .feature,
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    /* Include padding and border in the element's width and height */
+  }
+
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .feature-content h2,
+  .testimonial h2 {
+    margin-bottom: 10px;
+  }
+
+  .feature-content p,
+  .testimonial p {
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .fa-shield-cat,
+  .fa-heart-pulse,
+  .fa-crown {
+    font-size: 4rem;
+    margin-bottom: 15px;
+  }
+
+  /* Testimonial Section */
+  .testimonial>img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .testimonial h2,
+  .testimonial p {
+    margin: 0;
+  }
+
+  .testimonial {
+    flex: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-width: 200px;
+  }
+
+  .testimonials-container {
+    justify-content: space-between;
+  }
+
+  /* Pricing Section */
+  .pricing-container {
+    flex-direction: row;
+    align-items: normal;
+  }
+
+  /* Download Section */
+  .download-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  /* Footer Section */
+  .footer-container ul {
+    flex-direction: row;
   }
 }
 
@@ -478,6 +594,21 @@ p {
     /* 28px */
     --p-size: 1.375rem;
     /* 22px */
+    --btn-font-size: 1.375rem;
+  }
+
+  /* Features Section */
+  #features,
+  #testimonials,
+  #pricing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  /* Pricing Section */
+  .pricing-card,
+  .btn-download {
+    max-width: 400px;
   }
 }
 
@@ -499,6 +630,7 @@ p {
     /* 32px */
     --p-size: 1.5rem;
     /* 24px */
+    --btn-font-size: 1.5rem;
   }
 }
 
@@ -520,5 +652,10 @@ p {
     /* 36px */
     --p-size: 1.625rem;
     /* 26px */
+    --btn-font-size: 1.625rem;
+  }
+/* Pricing Section */
+  .pricing-card {
+    max-width: 500px;
   }
 }
